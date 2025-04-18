@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contador-container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.5);
+    color: gray;
+    text-align: center;
+    width: 500px;
+}
+.contador {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    font-size: 100px;
+}
+#horas, #minutos, #segundos {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.25);
+}
+.contador-botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.25);
+    margin: 25px;
+}
+.contador-botoes button {
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+button.clicked {
+    animation: pulse 0.2s ease;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
